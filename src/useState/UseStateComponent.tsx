@@ -12,7 +12,7 @@ const UseStateComponent = () => {
     }
     return (
         <div>
-          <p>Número aleatorio: {numero}</p>
+          <p className="text-base text-red-700">Número aleatorio: {numero}</p>
           <button onClick={generarAleatorio}>Generar número aleatorio</button>
         </div>
     )
