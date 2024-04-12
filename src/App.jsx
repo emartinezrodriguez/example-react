@@ -1,7 +1,7 @@
 import UseStateComponent from './useState/UseStateComponent'
 import UseEffectComponent from './useEffect/UseEffectComponent'
 import FetchComponent from './fetch/FetchComponent'
-import './App.css'
+// import './App.css'
 
 function App() {
   return (
