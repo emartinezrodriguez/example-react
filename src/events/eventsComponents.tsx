@@ -10,9 +10,11 @@ const eventsComponents= () => {
 
     useEffect(() => {
         const nameLocalStorage = localStorage.getItem('tareas')
-        const nameParse = JSON.parse(nameLocalStorage || '')
-        console.log("🚀 ~ useEffect ~ nameParse:", nameParse)
-        if (nameParse) setValueInput(nameParse[0].tarea)
+        if(nameLocalStorage) {
+            const nameParse = JSON.parse(nameLocalStorage)
+            console.log("🚀 ~ useEffect ~ nameParse:", nameParse)
+            if (nameParse) setValueInput(nameParse[0].tarea)
+        }
     }, [])
 
     const handleChange = (event) => {
