@@ -2,6 +2,7 @@ import UseStateComponent from './useState/UseStateComponent'
 import UseEffectComponent from './useEffect/UseEffectComponent'
 import FetchComponent from './fetch/FetchComponent'
 import EventsComponents from './events/eventsComponents'
+import TodoList from './todoList'
 // import './App.css'
 
 function App() {
@@ -9,8 +10,9 @@ function App() {
     <>
       {/* <UseStateComponent />
       <UseEffectComponent userName={'Juan'} />
-      <FetchComponent /> */}
-      <EventsComponents />
+      <FetchComponent />
+      <EventsComponents /> */}
+      <TodoList />
     </>
   )
 }
